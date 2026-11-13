@@ -4,31 +4,33 @@
 
 ---
 
-## 🌐 Live URLs (Once GitHub Pages is Enabled)
+## 🌐 Live Production URLs (Deployed on Vercel)
 
-| Page | URL | Purpose for Google Cloud Console |
+| Document | Direct URL | Google Cloud Console OAuth Field |
 | :--- | :--- | :--- |
-| **Privacy Policy** | `https://sairiteshdomakuntla.github.io/CelebrateHub-Privacy/` | **Application Privacy Policy link** *(Required)* |
-| **Terms of Service** | `https://sairiteshdomakuntla.github.io/CelebrateHub-Privacy/terms.html` | **Application Terms of Service link** *(Required / Recommended)* |
-| **Data Deletion Instructions** | `https://sairiteshdomakuntla.github.io/CelebrateHub-Privacy/data-deletion.html` | **User Data Deletion / Compliance link** |
-| **Home Page** | `https://sairiteshdomakuntla.github.io/CelebrateHub-Privacy/` | **Application Home page link** |
+| **Privacy Policy** | `https://celebratehubbusiness.vercel.app/` *(or `/index.html`)* | **Application privacy policy link** *(Mandatory)* |
+| **Terms of Service** | `https://celebratehubbusiness.vercel.app/terms.html` | **Application terms of service link** *(Recommended / Required)* |
+| **Data Deletion Instructions** | `https://celebratehubbusiness.vercel.app/data-deletion.html` | **User Data Deletion / Compliance URL** |
+| **Home Page** | `https://celebratehubbusiness.vercel.app/` | **Application home page link** |
 
 ---
 
 ## 📋 Google Cloud Console OAuth Consent Screen Fields
 
-When configuring your OAuth consent screen at [Google Cloud Console](https://console.cloud.google.com/apis/credentials/consent):
+When configuring your OAuth consent screen in [Google Cloud Console](https://console.cloud.google.com/apis/credentials/consent):
 
-| Field in Google Cloud Console | Recommended Value |
+| Field in Google Cloud Console | Exact Value to Enter |
 | :--- | :--- |
 | **App name** | `CelebrateHub` |
-| **User support email** | `celebratehub.business@gmail.com` (or your preferred admin email) |
-| **App logo** | *(Optional)* Upload CelebrateHub brand icon (`CH` icon) |
-| **Application home page** | `https://sairiteshdomakuntla.github.io/CelebrateHub-Privacy/` |
-| **Application privacy policy link** | `https://sairiteshdomakuntla.github.io/CelebrateHub-Privacy/` |
-| **Application terms of service link** | `https://sairiteshdomakuntla.github.io/CelebrateHub-Privacy/terms.html` |
-| **Authorized domains** | `github.io` *(and your production API/app domain if applicable)* |
+| **User support email** | `celebratehub.business@gmail.com` |
+| **App logo** | *(Optional)* CelebrateHub `CH` monogram brand mark |
+| **Application home page** | `https://celebratehubbusiness.vercel.app/` |
+| **Application privacy policy link** | `https://celebratehubbusiness.vercel.app/` |
+| **Application terms of service link** | `https://celebratehubbusiness.vercel.app/terms.html` |
+| **Authorized domains** | `celebratehubbusiness.vercel.app` *(or `vercel.app`)* |
 | **Developer contact information** | `celebratehub.business@gmail.com` |
+
+> **Note on Authorized Domains:** Google Cloud Console expects domains without `https://` or trailing slashes (e.g. `celebratehubbusiness.vercel.app` or `vercel.app`).
 
 ### OAuth Scopes to Request
 For standard Google Sign-In authentication:
@@ -38,47 +40,23 @@ For standard Google Sign-In authentication:
 
 ---
 
-## 🚀 How to Enable GitHub Pages (Instant Hosting)
+## 🛡️ Key Google Verification Requirements Satisfied
 
-1. Push these files to your repository:
-   ```bash
-   cd d:\proj\CelebrateHub-Privacy
-   git add .
-   git commit -m "Add Google OAuth compliant Privacy Policy, Terms, and Data Deletion pages"
-   git push origin main
-   ```
-2. Open your repository in your browser:
-   [https://github.com/sairiteshdomakuntla/CelebrateHub-Privacy/settings/pages](https://github.com/sairiteshdomakuntla/CelebrateHub-Privacy/settings/pages)
-3. Under **"Build and deployment"**:
-   - **Source**: `Deploy from a branch`
-   - **Branch**: `main`
-   - **Folder**: `/(root)`
-4. Click **Save**.
-5. Within 1-2 minutes, GitHub will publish your site live at:  
-   👉 `https://sairiteshdomakuntla.github.io/CelebrateHub-Privacy/`
+This portal has been tailored specifically to comply with **Google Cloud OAuth App Verification** standards:
 
----
-
-## 🛡️ Key Google Verification Requirements Included
-
-This privacy page has been tailored specifically to satisfy **Google Cloud OAuth App Verification** standards:
-
-1. **Prominent Application Identity:** Clearly identifies CelebrateHub as an event services marketplace platform.
-2. **Explicit Google API Services User Data Policy Compliance:**
+1. **Explicit Google API Services User Data Policy Compliance:**
    > *"CelebrateHub's use and transfer of information received from Google APIs to any other app will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements."*
-3. **Transparent Scope Justification:** Dedicated section detailing exactly why `openid`, `userinfo.email`, and `userinfo.profile` are requested and how they are used.
-4. **No Sale of Google User Data:** Express declaration that user data is never sold to third parties, data brokers, or advertising networks.
-5. **No AI Model Training:** Explicit disclosure that Google data is not used for generalized AI/ML training.
-6. **Data Deletion Instructions:** Dedicated step-by-step instructions (`data-deletion.html`) allowing users to request account erasure within the app or via direct email.
+2. **Transparent Scope Disclosures:** Dedicated table detailing exactly why `openid`, `userinfo.email`, and `userinfo.profile` are requested and how they are used.
+3. **No Sale of Google User Data:** Formal declaration that user data is never sold, licensed, or transferred to third-party data brokers, ad networks, or commercial entities.
+4. **No AI/ML Model Training:** Explicit disclosure that data obtained through Google APIs is never utilized to train generalized AI models.
+5. **Human Inspection Prohibited:** Policy guarantees employee/contractor review of user data is strictly prohibited unless explicitly requested by the user for technical support.
+6. **Data Deletion Instructions (`data-deletion.html`):** Complete, step-by-step instructions for in-app self-service erasure and direct support email requests (`celebratehub.business@gmail.com`).
 7. **Platform Context:** Custom-tailored to CelebrateHub's architecture (event planning, vendors, leads, Neon PostgreSQL, Razorpay payments, and JWT sessions).
 
 ---
 
-## 🎨 Visual Identity & Styling
+## 💻 Tech Stack & Deployment
 
-Built using standard HTML5, CSS3, and Google Fonts (`Inter`):
-- Deep Indigo/Navy background (`#0E0B22`, `#120F2B`, `#1A163B`)
-- Brand Purple (`#7C5CFF`), Celebration Magenta (`#D6307F`), and Amber Gold (`#FFC53D`)
-- Fully responsive across desktop, tablet, and mobile screens
-- Print-ready and accessible with high-contrast text and dark-mode optimization
-- Zero runtime dependencies or build steps required
+- **Hosting:** Vercel (`https://celebratehubbusiness.vercel.app/`) and GitHub Pages ready.
+- **Frontend:** Pure semantic HTML5, modern modular CSS3, responsive two-column documentation layout, zero external framework dependencies or build scripts needed.
+- **Design System:** Minimalist, high-trust corporate legal documentation inspired by Stripe, Linear, and Vercel Legal standards.
