@@ -22,13 +22,13 @@ When configuring your OAuth consent screen at [Google Cloud Console](https://con
 | Field in Google Cloud Console | Recommended Value |
 | :--- | :--- |
 | **App name** | `CelebrateHub` |
-| **User support email** | `sairiteshdomakuntla@gmail.com` (or your preferred admin email) |
+| **User support email** | `celebratehub.business@gmail.com` (or your preferred admin email) |
 | **App logo** | *(Optional)* Upload CelebrateHub brand icon (`CH` icon) |
 | **Application home page** | `https://sairiteshdomakuntla.github.io/CelebrateHub-Privacy/` |
 | **Application privacy policy link** | `https://sairiteshdomakuntla.github.io/CelebrateHub-Privacy/` |
 | **Application terms of service link** | `https://sairiteshdomakuntla.github.io/CelebrateHub-Privacy/terms.html` |
 | **Authorized domains** | `github.io` *(and your production API/app domain if applicable)* |
-| **Developer contact information** | `sairiteshdomakuntla@gmail.com` |
+| **Developer contact information** | `celebratehub.business@gmail.com` |
 
 ### OAuth Scopes to Request
 For standard Google Sign-In authentication:
